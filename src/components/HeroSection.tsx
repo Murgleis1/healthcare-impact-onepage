@@ -42,8 +42,7 @@ const HeroSection = () => {
                   alt="Dena Sparkman Signature"
                   className="h-48 lg:h-64 w-auto object-contain object-left"
                   style={{ 
-                    objectPosition: 'left center',
-                    clipPath: 'inset(25% 0 15% 0)'
+                    objectPosition: 'left center'
                   }}
                 />
                 <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-wide -mt-4">
