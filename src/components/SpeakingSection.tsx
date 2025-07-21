@@ -36,7 +36,7 @@ const SpeakingSection = () => {
   ];
 
   return (
-    <section id="speaking" className="py-20 bg-background">
+    <section id="speaking" className="py-20 bg-primary/5 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}

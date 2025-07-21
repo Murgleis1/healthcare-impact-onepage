@@ -47,31 +47,37 @@ const SolutionsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-section">
-      <div className="container mx-auto px-6">
+    <section className="py-20 bg-gradient-hero text-background relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 right-10 w-32 h-32 rounded-full bg-accent blur-3xl"></div>
+        <div className="absolute bottom-20 left-10 w-40 h-40 rounded-full bg-primary blur-3xl"></div>
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              Specialty Programs That <span className="text-primary">Set Us Apart</span>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+              Specialty Programs That <span className="text-accent">Set Us Apart</span>
             </h2>
           </div>
 
           {/* Solutions Grid */}
           <div className="space-y-12">
             {solutions.map((solution, index) => (
-              <div key={index} className="bg-card rounded-xl shadow-soft overflow-hidden hover:shadow-medium transition-shadow">
+              <div key={index} className="bg-background/10 backdrop-blur-sm rounded-xl shadow-soft overflow-hidden hover:shadow-medium transition-shadow">
                 <div className="p-8 lg:p-12">
                   <div className="flex items-start space-x-6">
-                    <div className="flex-shrink-0 w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
-                      <solution.icon className="h-8 w-8 text-primary" />
+                    <div className="flex-shrink-0 w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center">
+                      <solution.icon className="h-8 w-8 text-accent" />
                     </div>
                     
                     <div className="flex-1">
-                      <h3 className="text-2xl lg:text-3xl font-semibold text-foreground mb-4">
+                      <h3 className="text-2xl lg:text-3xl font-semibold mb-4">
                         {solution.title}
                       </h3>
-                      <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                      <p className="text-lg opacity-80 mb-6 leading-relaxed">
                         {solution.subtitle}
                       </p>
 
@@ -80,18 +86,18 @@ const SolutionsSection = () => {
                         {solution.features.map((feature, featureIndex) => (
                           <div key={featureIndex} className="flex items-center space-x-3">
                             <CheckCircle className="h-4 w-4 text-accent flex-shrink-0" />
-                            <span className="text-foreground">{feature}</span>
+                            <span className="text-background">{feature}</span>
                           </div>
                         ))}
                       </div>
 
                       {/* CTA or Quote */}
-                      {solution.cta && (
-                        <div className="bg-accent/10 p-6 rounded-lg border-l-4 border-accent">
-                          <div className="flex items-start space-x-4">
-                            <Heart className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
-                            <div>
-                              <p className="text-foreground mb-4">{solution.cta}</p>
+                        {solution.cta && (
+                          <div className="bg-accent/20 p-6 rounded-lg border-l-4 border-accent">
+                            <div className="flex items-start space-x-4">
+                              <Heart className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
+                              <div>
+                                <p className="mb-4">{solution.cta}</p>
                               <Button 
                                 variant="accent" 
                                 size="sm"
@@ -106,8 +112,8 @@ const SolutionsSection = () => {
                       )}
 
                       {solution.quote && (
-                        <div className="bg-primary/5 p-6 rounded-lg border-l-4 border-primary">
-                          <p className="text-foreground italic">"{solution.quote}"</p>
+                        <div className="bg-background/20 p-6 rounded-lg border-l-4 border-background">
+                          <p className="italic">"{solution.quote}"</p>
                         </div>
                       )}
                     </div>
