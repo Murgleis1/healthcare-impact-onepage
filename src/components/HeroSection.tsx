@@ -40,7 +40,7 @@ const HeroSection = () => {
                 <img 
                   src="/lovable-uploads/c50c1463-0606-4fb0-be33-7f7960cebe0d.png"
                   alt="Dena Sparkman Signature"
-                  className="h-24 lg:h-32 w-auto object-contain object-left"
+                  className="h-48 lg:h-64 w-auto object-contain object-left"
                   style={{ 
                     objectPosition: 'left center',
                     clipPath: 'inset(25% 0 25% 0)'
