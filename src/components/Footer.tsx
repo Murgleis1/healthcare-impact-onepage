@@ -74,7 +74,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-background/20 mt-12 pt-8 text-center">
           <p className="text-background/60">
-            © 2024 Quality First Consulting. All rights reserved.
+            © 2025 Quality First Consulting. All rights reserved.
           </p>
         </div>
       </div>
