@@ -38,7 +38,7 @@ const HeroSection = () => {
             <div className="space-y-0">
               <div className="space-y-2">
                 <img 
-                  src="/lovable-uploads/c50c1463-0606-4fb0-be33-7f7960cebe0d.png"
+                  src="/lovable-uploads/5effa7c9-461c-4940-ae64-7ead84307618.png"
                   alt="Dena Sparkman Signature"
                   className="h-48 lg:h-64 w-auto object-contain object-left"
                   style={{ 
