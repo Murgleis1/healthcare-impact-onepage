@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
-import { AlertTriangle, Brain, BarChart, Video, Mail } from "lucide-react";
+import { AlertCircle, Stethoscope, BarChart3, Video, Mail } from "lucide-react";
 import { useState } from "react";
 
 const NewsletterSection = () => {
@@ -19,15 +19,15 @@ const NewsletterSection = () => {
 
   const benefits = [
     {
-      icon: AlertTriangle,
+      icon: AlertCircle,
       text: "Timely insights on regulatory changes"
     },
     {
-      icon: Brain,
+      icon: Stethoscope,
       text: "Leadership tips based on 25+ years in the field"
     },
     {
-      icon: BarChart,
+      icon: BarChart3,
       text: "Case studies and client success stories"
     },
     {

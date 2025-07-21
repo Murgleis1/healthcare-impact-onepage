@@ -1,4 +1,4 @@
-import { CheckCircle, GraduationCap, Building, Users, Wheat } from "lucide-react";
+import { CheckCircle, GraduationCap, Building2, Users, Wheat, Heart, Award } from "lucide-react";
 
 const AboutSection = () => {
   const highlights = [
@@ -11,7 +11,7 @@ const AboutSection = () => {
       text: "Fellow of the American College of Healthcare Executives"
     },
     {
-      icon: Building,
+      icon: Building2,
       text: "Proven success in both acute and ambulatory care"
     },
     {
@@ -27,12 +27,22 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-gradient-section">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
               Meet Dena Sparkman, <span className="text-primary">FACHE</span>
             </h2>
+            <div className="flex justify-center items-center space-x-8 mt-8">
+              <div className="flex items-center space-x-2 bg-card px-4 py-2 rounded-lg shadow-soft">
+                <Heart className="h-5 w-5 text-primary" />
+                <span className="text-sm text-muted-foreground">Healthcare Excellence</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-card px-4 py-2 rounded-lg shadow-soft">
+                <Award className="h-5 w-5 text-accent" />
+                <span className="text-sm text-muted-foreground">25+ Years Experience</span>
+              </div>
+            </div>
           </div>
 
           {/* Content Grid */}

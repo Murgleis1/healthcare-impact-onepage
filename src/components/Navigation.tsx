@@ -27,33 +27,35 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="text-xl font-bold text-foreground">
-              Quality First <span className="text-primary">Consulting</span>
-            </div>
+            <img 
+              src="/lovable-uploads/0dbd120b-9204-49dc-a34c-b2e087c56c6d.png" 
+              alt="Quality First Consulting"
+              className="h-8 w-auto"
+            />
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-foreground hover:text-primary transition-colors"
+              className={`transition-colors ${isScrolled ? 'text-foreground hover:text-primary' : 'text-white hover:text-accent'}`}
             >
               About
             </button>
             <button 
               onClick={() => scrollToSection('services')}
-              className="text-foreground hover:text-primary transition-colors"
+              className={`transition-colors ${isScrolled ? 'text-foreground hover:text-primary' : 'text-white hover:text-accent'}`}
             >
               Services
             </button>
             <button 
               onClick={() => scrollToSection('speaking')}
-              className="text-foreground hover:text-primary transition-colors"
+              className={`transition-colors ${isScrolled ? 'text-foreground hover:text-primary' : 'text-white hover:text-accent'}`}
             >
               Speaking
             </button>
             <button 
               onClick={() => scrollToSection('newsletter')}
-              className="text-foreground hover:text-primary transition-colors"
+              className={`transition-colors ${isScrolled ? 'text-foreground hover:text-primary' : 'text-white hover:text-accent'}`}
             >
               Newsletter
             </button>
@@ -61,7 +63,7 @@ const Navigation = () => {
 
           <div className="flex items-center space-x-4">
             <Button 
-              variant="outline" 
+              variant={isScrolled ? "outline" : "hero"}
               size="sm"
               onClick={() => scrollToSection('newsletter')}
               className="hidden sm:inline-flex"
@@ -69,7 +71,7 @@ const Navigation = () => {
               Newsletter
             </Button>
             <Button 
-              variant="default" 
+              variant={isScrolled ? "default" : "accent"}
               size="sm"
               onClick={() => scrollToSection('speaking')}
             >

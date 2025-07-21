@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { DollarSign, Settings, Users, Calendar } from "lucide-react";
+import { TrendingUp, Activity, Users, Calendar } from "lucide-react";
 
 const ServicesSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -11,14 +11,14 @@ const ServicesSection = () => {
 
   const services = [
     {
-      icon: DollarSign,
+      icon: TrendingUp,
       title: "Financial Optimization",
       subtitle: "Increase margins without sacrificing patient care.",
       description: "We identify hidden inefficiencies and implement proven solutions that improve your bottom line within 12 months.",
       highlight: "We've helped clients realize 10–15% margin gains using strategic staffing and workflow realignment."
     },
     {
-      icon: Settings,
+      icon: Activity,
       title: "Operational Excellence",
       subtitle: "Optimize your hospital operations.",
       description: "We streamline workflows, improve patient throughput, and enhance interdepartmental communication.",

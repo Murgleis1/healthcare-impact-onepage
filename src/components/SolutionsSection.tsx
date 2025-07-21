@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Target, CheckSquare, Lightbulb, Mic } from "lucide-react";
+import { Shield, Target, FileCheck, Heart, Mic, CheckCircle } from "lucide-react";
 
 const SolutionsSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -34,7 +34,7 @@ const SolutionsSection = () => {
       ]
     },
     {
-      icon: CheckSquare,
+      icon: FileCheck,
       title: "Regulatory Compliance Readiness",
       subtitle: "Stay ahead of Joint Commission and CMS requirements.",
       features: [
@@ -79,7 +79,7 @@ const SolutionsSection = () => {
                       <div className="grid md:grid-cols-2 gap-3 mb-6">
                         {solution.features.map((feature, featureIndex) => (
                           <div key={featureIndex} className="flex items-center space-x-3">
-                            <Lightbulb className="h-4 w-4 text-accent flex-shrink-0" />
+                            <CheckCircle className="h-4 w-4 text-accent flex-shrink-0" />
                             <span className="text-foreground">{feature}</span>
                           </div>
                         ))}
@@ -89,7 +89,7 @@ const SolutionsSection = () => {
                       {solution.cta && (
                         <div className="bg-accent/10 p-6 rounded-lg border-l-4 border-accent">
                           <div className="flex items-start space-x-4">
-                            <Lightbulb className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
+                            <Heart className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
                             <div>
                               <p className="text-foreground mb-4">{solution.cta}</p>
                               <Button 

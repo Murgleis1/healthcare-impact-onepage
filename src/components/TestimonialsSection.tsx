@@ -1,4 +1,4 @@
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, Heart } from "lucide-react";
 
 const TestimonialsSection = () => {
   const testimonials = [
