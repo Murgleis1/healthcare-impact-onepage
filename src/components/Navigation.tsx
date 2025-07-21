@@ -63,7 +63,7 @@ const Navigation = () => {
 
           <div className="flex items-center space-x-4">
             <Button 
-              variant={isScrolled ? "outline" : "hero"}
+              variant={isScrolled ? "secondary" : "hero"}
               size="sm"
               onClick={() => scrollToSection('newsletter')}
               className="hidden sm:inline-flex"
