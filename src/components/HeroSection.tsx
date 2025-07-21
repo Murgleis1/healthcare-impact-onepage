@@ -46,7 +46,7 @@ const HeroSection = () => {
                     clipPath: 'inset(25% 0 15% 0)'
                   }}
                 />
-                <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-wide">
+                <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-wide -mt-4">
                   ELEVATING HEALTHCARE <span className="text-accent">EXCELLENCE</span>
                 </h1>
               </div>
