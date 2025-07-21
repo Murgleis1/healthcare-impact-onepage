@@ -34,8 +34,18 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-background">
-      <div className="container mx-auto px-6">
+    <section id="services" className="py-20 bg-background relative overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/lovable-uploads/86d20a8b-b87e-41f1-a461-704a9d0de5ce.png"
+          alt="Modern Healthcare Facility"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-background/90"></div>
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
