@@ -37,9 +37,15 @@ const HeroSection = () => {
           <div className="space-y-8 text-background order-1 lg:order-2">
             <div className="space-y-6">
               <div className="space-y-2">
-                <p className="text-2xl lg:text-3xl font-light italic opacity-90">
-                  Dena Sparkman
-                </p>
+                <img 
+                  src="/lovable-uploads/c50c1463-0606-4fb0-be33-7f7960cebe0d.png"
+                  alt="Dena Sparkman Signature"
+                  className="h-16 lg:h-20 w-auto object-contain object-left"
+                  style={{ 
+                    objectPosition: 'left center',
+                    clipPath: 'inset(25% 0 25% 0)'
+                  }}
+                />
                 <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-wide">
                   ELEVATING HEALTHCARE <span className="text-accent">EXCELLENCE</span>
                 </h1>
