@@ -21,9 +21,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="text-2xl font-bold mb-4">
-              Quality First <span className="text-accent">Consulting</span>
-            </div>
+            <img 
+              src="/lovable-uploads/0dbd120b-9204-49dc-a34c-b2e087c56c6d.png" 
+              alt="Quality First Consulting"
+              className="h-12 w-auto mb-4"
+            />
             <p className="text-lg text-background/80 mb-6 leading-relaxed">
               Healthcare Leadership That Heals
             </p>
