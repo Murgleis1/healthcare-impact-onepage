@@ -18,10 +18,10 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-6 py-20">
-        <div className="grid lg:grid-cols-5 gap-16 items-center">
+        <div className="grid lg:grid-cols-7 gap-16 items-center">
           {/* Hero Image - Left Side (3 columns) */}
           <div className="relative order-2 lg:order-1 lg:col-span-3">
-            <div className="relative z-10 rounded-2xl overflow-hidden shadow-large">
+            <div className="relative z-10 rounded-2xl overflow-hidden shadow-large max-w-lg mx-auto">
               <img 
                 src="/lovable-uploads/09c602e2-514a-48be-9c0a-3e6ba6533a36.png"
                 alt="Dena Sparkman addressing healthcare professionals"
@@ -33,10 +33,10 @@ const HeroSection = () => {
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-2xl blur-xl transform translate-x-4 translate-y-4"></div>
           </div>
 
-          {/* Content - Right Side (2 columns) */}
-          <div className="space-y-8 text-background order-1 lg:order-2 lg:col-span-2 text-center lg:text-center">
-            <div className="space-y-0">
-              <div className="space-y-2">
+          {/* Content - Right Side (4 columns) */}
+          <div className="space-y-8 text-background order-1 lg:order-2 lg:col-span-4 text-center lg:text-center">
+            <div className="space-y-6">
+              <div className="space-y-1">
                 <img 
                   src="/lovable-uploads/5effa7c9-461c-4940-ae64-7ead84307618.png"
                   alt="Dena Sparkman Signature"
@@ -45,7 +45,7 @@ const HeroSection = () => {
                     objectPosition: 'center'
                   }}
                 />
-                <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-wide -mt-4">
+                <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-wide -mt-2">
                   ELEVATING HEALTHCARE <span className="text-accent">EXCELLENCE</span>
                 </h1>
               </div>
