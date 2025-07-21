@@ -43,7 +43,7 @@ const HeroSection = () => {
                   className="h-48 lg:h-64 w-auto object-contain object-left"
                   style={{ 
                     objectPosition: 'left center',
-                    clipPath: 'inset(25% 0 25% 0)'
+                    clipPath: 'inset(25% 0 40% 0)'
                   }}
                 />
                 <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-wide">
