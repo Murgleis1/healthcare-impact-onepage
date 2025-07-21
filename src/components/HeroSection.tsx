@@ -35,7 +35,7 @@ const HeroSection = () => {
 
           {/* Content - Right Side */}
           <div className="space-y-8 text-background order-1 lg:order-2">
-            <div className="space-y-6">
+            <div className="space-y-2">
               <div className="space-y-2">
                 <img 
                   src="/lovable-uploads/c50c1463-0606-4fb0-be33-7f7960cebe0d.png"
